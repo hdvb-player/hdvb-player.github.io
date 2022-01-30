@@ -4,7 +4,7 @@ function getParams () {
 		options = {};
 		
 	while( b-- ) {
-		if ( ~a[b].src.indexOf("hdvb_lord.js") ) {
+		if ( ~a[b].src.indexOf("actualize_lord.js") ) {
 			options = a[b].innerHTML.trim();
 			if (options != '') {
 				options = JSON.parse( options );
