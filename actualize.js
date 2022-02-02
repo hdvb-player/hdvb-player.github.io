@@ -10,7 +10,8 @@ l = function(t, e) {
                 }
             })
         })
-    }, s = function(t) {
+    }, 
+    s = function(t) {
         var e, a;
         l(t, function(n, t, o, i) {
             e = n, a = o
@@ -24,12 +25,14 @@ l = function(t, e) {
         })(a), e.onload = function() {
             e.contentWindow.postMessage(gs(a[1]), "*")
         }, hm = function(t) {
-          console.log(t);
+          console.log(t,);
             if ("data" in t && "string" == typeof t.data && t.origin == n) {
                 var e = JSON.parse(t.data);
                 "name" in e && "obj" in e && ss(e.name, e.obj)
             }
         }, "addEventListener" in window ? window.addEventListener("message", hm) : window.attachEvent("message", hm))
+        
+        console.log("addEventListener" in window, t.origin, n)
     },
     function() {
         var n, t = [];
