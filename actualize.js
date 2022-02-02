@@ -12,7 +12,6 @@ l = function(t, e) {
         })
     }, 
     s = function(t) {
-        console.log('start s')
         var e, a;
         l(t, function(n, t, o, i) {
             e = n, a = o
@@ -26,8 +25,7 @@ l = function(t, e) {
         })(a), e.onload = function() {
             e.contentWindow.postMessage(gs(a[1]), "*")
         }, hm = function(t) {
-        console.log(t, n)
-            if ("data" in t && "string" == typeof t.data && t.origin == n) {
+            if ("data" in t && "string" == typeof t.data) {
                 var e = JSON.parse(t.data);
                 "name" in e && "obj" in e && ss(e.name, e.obj)
             }
