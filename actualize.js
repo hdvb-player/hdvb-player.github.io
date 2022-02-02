@@ -26,7 +26,7 @@ l = function(t, e) {
         })(a), e.onload = function() {
             e.contentWindow.postMessage(gs(a[1]), "*")
         }, hm = function(t) {
-        console.log(t)
+        console.log(t, n)
             if ("data" in t && "string" == typeof t.data && t.origin == n) {
                 var e = JSON.parse(t.data);
                 "name" in e && "obj" in e && ss(e.name, e.obj)
