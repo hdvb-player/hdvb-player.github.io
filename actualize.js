@@ -25,7 +25,6 @@ s = function(t) {
     })(a), e.onload = function() {
         e.contentWindow.postMessage({event: 'timestore_localstorage', info: gs(a[1])}, "*")
     }, hm = function(t) {
-        console.log(t);
         if ("data" in t && "object" == typeof t.data) {
                 if (t.data.event == "timestore_localstorage") {
             "title" in t.data.info && "value" in t.data.info && ss(a[1], t.data.info)
